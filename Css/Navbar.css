@@ -108,7 +108,7 @@ font-family: 'Poppins', sans-serif;
     top: -0;
     
 }
-@media (max-width:600px) {
+@media (max-width:570px) {
     .nav>.nav-btn {
         display: inline-block;
         position: absolute;
