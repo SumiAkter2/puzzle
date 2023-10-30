@@ -1,6 +1,6 @@
 // active class:
 console.log("please allah help me");
-const links = document.querySelectorAll("#nav-link   a");
+const links = document.querySelectorAll("#nav-link li  a");
 const contentSections = document.querySelectorAll(".active-svg");
 function showContent(link) {
   links.forEach((link) => link.classList.remove("active"));
@@ -22,6 +22,7 @@ links.forEach((link) => {
   });
 });
 showContent(links[0]);
+
 // function handleClick(event) {
 //   event.preventDefault();
 //   links.forEach((link) => link.classList.remove("active"));

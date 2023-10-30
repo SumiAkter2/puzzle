@@ -162,8 +162,6 @@ font-family: 'Poppins';
     .nav>.nav-btn>label:hover,
     .nav #nav-check:checked~.nav-btn>label {
         background-color: #fff;
-      
-        
     }
         .nav>.nav-btn img{
             cursor: pointer;
@@ -175,7 +173,7 @@ font-family: 'Poppins';
     .nav>.nav-links {
        
         position: absolute;
-        display: block;
+        display: grid;
         width: 100%;
         background-color: #fff;
         color: #071B55;
@@ -184,15 +182,14 @@ font-family: 'Poppins';
         transition: all 0.3s ease-in;
         overflow-y: hidden;
         top: 70px;
-        left: 0px;
-        
+        left: 0px; 
         
     }
 
     .nav>.nav-links>a {
         display: block;
         width: 100%;
-        padding-top: 30px;
+        /* padding-top: 20px; */
         width: 150px;
         margin: 0 auto;
     }
@@ -209,12 +206,10 @@ font-family: 'Poppins';
         .nav-contact-btn{
             display: none;
         }
-
-                
+  
                 .active {
                     color: #071B55;
                     opacity: 100%;
-                    border-bottom: 2px solid #071B55;
                     
                 }
 }
