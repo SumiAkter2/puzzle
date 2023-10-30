@@ -238,7 +238,7 @@ padding: 0 120px;
     background-color: white;
 }
 
-.before-footer-phn{
+.before-footer-phone{
     display: none;
 }
 
@@ -367,28 +367,25 @@ bottom: 5px;
     width: 100%;
     height: 100%;
   }
-  .before-footer-phn{
-        display: block;
-        width: 100%;
-        height: 100%;
-        flex-shrink: 0;
-        background: #071B55;
-        margin-top: 100px;
+
+  .before-footer-phone{
+    display: block;
+    height: 560px;
+    margin: 50px 0;
+    border-radius: 20px;
   }
   .slide p{
-    padding: 20px;
-    margin: 20px;
-        color: #FFF;
+    color: #FFF;
+        padding: 100px 20px;
         text-align: center;
         font-family: Poppins;
         font-size: 20px;
         font-style: normal;
         font-weight: 500;
-        line-height: 32px; /* 160% */
+        line-height: 32px;
+        /* 160% */
         letter-spacing: -0.4px;
-        margin:100px auto;
   }
-
   #slider {
       margin: 0 auto;
       width: 360px;
@@ -398,7 +395,7 @@ bottom: 5px;
 
   #slider-wrapper {
       width: 9999px;
-      height: 300px;
+      height: 100%;
       position: relative;
       transition: left 400ms linear;
   }
@@ -406,7 +403,7 @@ bottom: 5px;
   .slide {
       float: left;
       width: 360px;
-      height: 300px;
+      height: 100%;
       position: relative;
   }
 
@@ -416,15 +413,14 @@ bottom: 5px;
       align-items: center;
       gap: 5px;
       position: absolute;
-      bottom: -40px;
-      left: 150px;
-     
+      bottom: 20px;
+      left: 450px;
   }
 
   #slider-nav a {
-  
-      width: 10px;
-      height: 10px;
+
+      width: 30px;
+      height: 30px;
       background: gray;
       border-radius: 100%;
       text-align: center;
@@ -435,26 +431,5 @@ bottom: 5px;
 
   #slider-nav a.current {
       background-color: white;
-  }
-  .bg-img1{
-    position: absolute;
-    right: 0;
-  
-    
-  }
-  .before-footer .bg-img1,.bg-img2{
-        width: 100%;
-        flex-shrink: 0;
-  }
-  .before-footer-text{
-    width: 353px;
-    color: #FFF;
-    text-align: center;
-     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 32px;
-    letter-spacing: -0.4px;
   }
 }
