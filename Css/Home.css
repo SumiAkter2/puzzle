@@ -142,9 +142,12 @@ padding: 0 120px;
       flex-shrink: 0;
       margin: 150px auto;
       border-radius: 25px;
-      background: #071B55;
+      background: url('../assets/footer/before-footer-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
       color: #FFF;
-      position: relative;
+      
   }
   .for-patient{
     display: flex;
@@ -174,70 +177,52 @@ padding: 0 120px;
         font-weight: 500;
         line-height: normal;
         letter-spacing: -0.5px;
-        margin: 80px auto;
+        margin: 50px auto;
 }
-  .before-footer .bg-img1{
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 20;
-  }
-  .before-footer .bg-img2{
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    z-index: 10;
-  }
+  
   
 /* slider */
 
-#slider {
-    margin: 0 auto;
-    width: 960px;
-    overflow: hidden;
-    position: relative;
-}
+ .slider-container {
+     width: 932px;
+     margin: 0px auto;
+     overflow: hidden;
+ }
 
-#slider-wrapper {
-    width: 9999px;
-    height: 300px;
-    position: relative;
-    transition: left 400ms linear;
-}
-
-.slide {
-    float: left;
-    width: 960px;
-    height: 300px;
-    position: relative;
-}
-
-#slider-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    position: absolute;
-    bottom: 0px;
-    left: 450px;
-}
-
-#slider-nav a {
-   
-    width: 10px;
-    height: 10px;
-    background: gray;
-    border-radius: 100%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+ .slider {
+     display: flex;
+     transition: transform 1s;
     
-}
+ }
 
-#slider-nav a.current {
-    background-color: white;
-}
+ .slide {
+     width: 930px;
+     padding: 20px;
+     color: white;
+     text-align: center;
+  
+ }
 
+ .pagination {
+    width: 100px;
+    text-align: center;
+    margin: 30px auto;
+ }
+
+ .dot {
+   
+     width: 10px;
+     height: 10px;
+     background-color: #888;
+     border-radius: 50%;
+     display: inline-block;
+     margin: 0 5px;
+     cursor: pointer;
+ }
+
+ .dot.active {
+     background-color: #333;
+ }
 .before-footer-phone{
     display: none;
 }

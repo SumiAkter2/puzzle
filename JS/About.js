@@ -1,23 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const sliderContent = document.querySelector(".slider-content");
-  const slides = sliderContent.querySelectorAll("p");
+  const slider = document.querySelector(".slider");
+  const slides = document.querySelectorAll(".slide");
   const dots = document.querySelectorAll(".dot");
-  let currentSlide = 0;
+  let currentIndex = 0;
   const slideInterval = 3000; // Change slide every 3 seconds
 
   function showSlide(slideIndex) {
     slides.forEach((slide, index) => {
       if (index === slideIndex) {
-        slide.classList.add("active");
+        slide.style.display = "block";
       } else {
-        slide.classList.remove("active");
+        slide.style.display = "none";
       }
     });
   }
 
   function updatePagination() {
     dots.forEach((dot, index) => {
-      if (index === currentSlide) {
+      if (index === currentIndex) {
         dot.classList.add("active");
       } else {
         dot.classList.remove("active");
@@ -26,13 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
+    slides[currentIndex].style.display = "none";
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
     updatePagination();
   }
 
   // Initialize the first slide and pagination
-  showSlide(currentSlide);
+  slides[currentIndex].style.display = "block";
   updatePagination();
 
   // Start the slide show
@@ -41,8 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Handle dot click events
   dots.forEach((dot, index) => {
     dot.addEventListener("click", function () {
-      currentSlide = index;
-      showSlide(currentSlide);
+      slides[currentIndex].style.display = "none";
+      currentIndex = index;
+      showSlide(currentIndex);
       updatePagination();
     });
   });
