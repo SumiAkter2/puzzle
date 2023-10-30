@@ -302,6 +302,7 @@ padding: 0 120px;
         height: 330px;
         width: 100%;
         position: relative;
+        border-radius: 20px;
     }
     .after-banner-phone p{
             color: #FFF;
