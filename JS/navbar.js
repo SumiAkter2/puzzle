@@ -9,7 +9,7 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 // slider:
-
+console.log("all ok");
 class Slider {
   constructor(element) {
     this.el = document.querySelector(element);

@@ -13,6 +13,7 @@
 
 .nav-header{
 cursor: pointer;
+padding-left: 20px;
 }
 
 .nav>.nav-header>.nav-title {
