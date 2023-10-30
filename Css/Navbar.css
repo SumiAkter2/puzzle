@@ -141,6 +141,11 @@ font-family: 'Poppins';
     .nav-header {
         padding-top: 5px;
     }
+    .nav-title img{
+        width: 83.333px;
+            height: 35px;
+            flex-shrink: 0;
+    } 
     .nav>.nav-btn {
         display: inline-block;
         position: absolute;
