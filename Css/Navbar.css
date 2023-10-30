@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding:  30px 20px;
+    padding:  0px 20px;
 }
 
 .nav-header{
@@ -17,7 +17,7 @@ cursor: pointer;
 
 .nav>.nav-header>.nav-title {
     display: inline-block;
-    padding: 10px ;
+    /* padding: 10px ; */
     width: 100px;
     height: 42px;
     flex-shrink: 0;
@@ -118,12 +118,16 @@ cursor: pointer;
     .nav{
         padding-top: 20px;
     }
+    .nav-header {
+        padding-top: 5px;
+    }
     .nav>.nav-btn {
         display: inline-block;
         position: absolute;
         right: 0px;
         top: 0px;
         cursor: pointer;
+        padding-top: 10px;
     }
 
     .nav>.nav-btn>label img{
@@ -143,12 +147,13 @@ cursor: pointer;
     }
         .nav>.nav-btn img{
             cursor: pointer;
+            padding: 10px;
         }
 
  
 
     .nav>.nav-links {
-        padding-top: 10px;
+       
         position: absolute;
         display: block;
         width: 100%;
@@ -158,9 +163,9 @@ cursor: pointer;
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
-        top: 50px;
+        top: 70px;
         left: 0px;
-       
+        
         
     }
 
@@ -168,6 +173,8 @@ cursor: pointer;
         display: block;
         width: 100%;
         padding-top: 30px;
+        width: 150px;
+        margin: 0 auto;
     }
 
     .nav>#nav-check:not(:checked)~.nav-links {
@@ -182,6 +189,14 @@ cursor: pointer;
         .nav-contact-btn{
             display: none;
         }
+
+                
+                .active {
+                    color: #071B55;
+                    opacity: 100%;
+                    border-bottom: 2px solid #071B55;
+                    
+                }
 }
 
 
