@@ -207,6 +207,9 @@ padding: 0 120px;
   /* phone */
 @media screen and (max-width:570px) {
     /* banner */
+    *{
+        padding: 0;
+    }
     .banner-section{
       
         display: flex;
@@ -233,7 +236,7 @@ padding: 0 120px;
             font-style: normal;
             font-weight: 700;
             line-height: 40px;
-          
+            width: 320px;
             letter-spacing: -0.6px;
     }
     .banner-text p{
@@ -290,16 +293,19 @@ bottom: 5px;
         }
         .same-container h1{
             font-size: 24px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                letter-spacing: -0.24px;
+            padding-left: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.24px;
         }
         .same-container p{
+            padding-left:30px;
+            width: 320px;
             font-size: 18px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 150%;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
         }
         .even-container{
            display: block;
