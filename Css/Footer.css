@@ -50,7 +50,7 @@ footer img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 112px;
+    padding: 0 42px;
 }
 .copy-right-text{
     color: var(--gray-500, #667085);
@@ -80,7 +80,7 @@ footer img{
     }
 .last-footer{
     display: grid;
-    padding: 0 32px;
+    padding: 0 20px;
     text-align: center;
 }
 }
