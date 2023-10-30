@@ -2,7 +2,7 @@ footer{
     width: 100%;
     flex-shrink: 0;
     background: #EBEDEE;
-  position: relative;
+    position: relative;
 }
 footer img{
     width: 100px;
@@ -41,9 +41,11 @@ footer img{
     line-height: 30px;
     letter-spacing: -0.4px;
 }
-.email img{
+.email svg{
     width: 20px;
     height: 16px;
+    stroke-width: 2px;
+    stroke: #071B55;
 }
 .footer-line{
         display: flex;
@@ -89,9 +91,35 @@ footer img{
     .footer-content{
         padding: 32px 20px;
     }
+    .footer-paragraph{
+            width: 350px;
+            margin: 0 auto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.4px;
+    }
+    .email{
+        font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            /* 187.5% */
+            letter-spacing: -0.32px;
+    }
 .last-footer{
-    display: grid;
-    padding: 30px 30px;
-    text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 30px;
+        align-self: stretch;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0 auto;
+        padding-top: 0px;
+       
 }
 }
