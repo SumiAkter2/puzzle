@@ -1,12 +1,23 @@
-var header = document.getElementById("nav-link");
-var btns = header.getElementsByClassName("link-btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+// var header = document.getElementById("nav-link");
+// var btns = header.getElementsByClassName("link-btn");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function () {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
+
+const links = document.querySelectorAll("#nav-link   a");
+
+function handleClick(event) {
+  event.preventDefault();
+  links.forEach((link) => link.classList.remove("active"));
+  event.target.classList.add("active");
 }
+
+links.forEach((link) => link.addEventListener("click", handleClick));
+links[0].classList.add("active");
 
 // slider:
 console.log("all ok");

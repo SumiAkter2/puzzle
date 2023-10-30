@@ -32,7 +32,8 @@ padding-left: 20px;
 
 .nav>.nav-links {
     
-    display: inline;
+    display: flex;
+    
     cursor: pointer;
     justify-content: center;
     align-items: center;
@@ -41,20 +42,28 @@ padding-left: 20px;
     border-radius: 22px;
 }
 
-.nav>.nav-links>a {
+.nav>.nav-links>li {
         display: inline-block;
-        color: #071B55;
-        font-family: 'Poppins';
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 130%;
-        opacity: 0.7;
-        padding: 6px 20px;
         text-decoration: none;
+        list-style: none;
+        padding: 6px 20px;
+        
 }
+.nav>.nav-links>li>a{
+text-decoration: none;
+color: #071B55;
+font-family: 'Poppins';
+    color: #071B55;
+    opacity: 0.7;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    
+    
 
-.nav>.nav-links>a:hover,.active {
+}
+.nav>.nav-links>li>a:hover, .nav>.nav-links>li>a.active  {
     color: #071B55;
     opacity: 100%;
     border-bottom: 2px solid #071B55;
