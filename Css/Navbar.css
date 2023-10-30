@@ -1,35 +1,28 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-   
-font-family: 'Inter', sans-serif;
-font-family: 'Poppins', sans-serif;
-}
 
 .nav {
-    height: 80px;
+    height: 50px;
     width: 100%;
-    background-color: #fff;
-    position: relative;
+    border-radius: 30px;
+    background: #FFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 44px;
+    position: relative;
+    padding:  30px 20px;
 }
 
-.nav>.nav-header {
-    display: inline;
+.nav-header{
+cursor: pointer;
 }
 
 .nav>.nav-header>.nav-title {
     display: inline-block;
+    padding: 10px ;
     width: 100px;
     height: 42px;
     flex-shrink: 0;
+    cursor: pointer;
+    
 }
 
 .nav>.nav-btn {
@@ -37,116 +30,147 @@ font-family: 'Poppins', sans-serif;
 }
 
 .nav>.nav-links {
-   
-        display: inline-flex;
-        padding: 13px 16px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 22px;
-        background: #FFF;
-   
     
+    display: inline;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    border-radius: 22px;
 }
 
 .nav>.nav-links>a {
     display: inline-block;
-    padding: 13px 10px 13px 10px;
-    text-decoration: none;
     color: #071B55;
-        font-family:'Poppins',
-            sans-serif ;
+    font-family: Poppins;
         font-size: 15px;
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
         opacity: 0.7;
-       
+        padding: 6px 20px;
 }
 
 .nav>.nav-links>a:hover {
     color: #071B55;
     opacity: 100%;
-  
 }
 
+.active{
+color: red;
+opacity: 100%;
+border-bottom: 2px solid #071B55;
+
+}
 .nav>#nav-check {
     display: none;
 }
 
+.contact-btn {
 
-.contact-btn{
-    width: 163px;
+    width: 165px;
     height: 44px;
     flex-shrink: 0;
     border-radius: 22px;
     background: #152783;
-    color: #FFF;
-    border: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    padding: 0 5px;
     position: relative;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    font-family: 'Poppins', sans-serif;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 130%;
+}
 
-}
-#contact-text{
-   margin-right: 20px;
-}
-.contact-btn img{
+.IconContainer {
     width: 38px;
     height: 38px;
     flex-shrink: 0;
     border-radius: 22px;
     background: #23B1D9;
-    position:absolute ;
-    right: 2;
-    top: -0;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: .3s;
+    position: absolute;
+    right: 3px;
 }
+
+
+
+.contact-text {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    position: absolute;
+    left: 20px;
+
+}
+
+
+
 @media (max-width:570px) {
+    .nav{
+        padding-top: 20px;
+    }
     .nav>.nav-btn {
         display: inline-block;
         position: absolute;
         right: 0px;
         top: 0px;
+        cursor: pointer;
     }
 
-    .nav>.nav-btn>label {
+    .nav>.nav-btn>label img{
         display: inline-block;
         width: 50px;
         height: 50px;
         padding: 13px;
+        cursor: pointer;
+        
     }
 
-   
-
-    .nav>.nav-btn>label>span {
-        display: block;
-        width: 25px;
-        height: 10px;
-        border-top: 2px solid #eee;
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: #fff;
+      
+        
     }
+        .nav>.nav-btn img{
+            cursor: pointer;
+        }
+
+ 
 
     .nav>.nav-links {
+        padding-top: 10px;
         position: absolute;
         display: block;
         width: 100%;
         background-color: #fff;
+        color: #071B55;
+        text-align: center;
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
         top: 50px;
         left: 0px;
+       
+        
     }
 
     .nav>.nav-links>a {
         display: block;
         width: 100%;
+        padding-top: 30px;
     }
 
     .nav>#nav-check:not(:checked)~.nav-links {
@@ -157,4 +181,36 @@ font-family: 'Poppins', sans-serif;
         height: calc(100vh - 50px);
         overflow-y: auto;
     }
+
+        .nav-contact-btn{
+            display: none;
+        }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

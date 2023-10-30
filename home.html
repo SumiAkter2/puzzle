@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="home">
     <!-- Navbar -->
 
     <header>
@@ -25,121 +25,150 @@
         <input type="checkbox" id="nav-check" />
         <div class="nav-header">
           <div class="nav-title">
-            <img src="./assets/navbar/logo.svg" alt="logo-svg" />
+            <img src="./assets/navbar/logo.svg" alt="logo" />
           </div>
         </div>
         <div class="nav-btn">
           <label for="nav-check">
-            <img src="./assets/navbar/navbar.svg" alt="" />
+            <img src="./assets/navbar/navbar.svg" alt="menu-logo" />
           </label>
         </div>
 
-        <div class="nav-links">
-          <a href="">Home</a>
-          <a href="">About Us</a>
-          <a href="">Services</a>
+        <div class="nav-links" id="nav-link">
+          <a class="link-btn">Home</a>
+          <a class="link-btn active">About Us</a>
+          <a class="link-btn">Services</a>
         </div>
-
-        <div>
-          <button class="contact-btn"><span class="contact-text">
-            Contact Us 
+       <div class="nav-contact-btn">
+         <div class="contact-btn">
+          <span class="contact-text"> Contact Us</span>
+          <span class="IconContainer">
+            <img src="./assets/navbar/arrow-narrow-up-right.svg" alt="logo" />
           </span>
-
-            <img src="./assets/navbar/arrow-narrow-up-right.svg" alt="arrow-logo">
-         
         </div>
+       </div>
       </div>
     </header>
-<!-- main section -->
-<!-- banner -->
-<section class="banner-section">
-    <div class="banner-text">
-<h1>Transforming Post-Acute Care through Value-Based Innovation</h1>
-<p>Every moment, every transition matters. Our 90-day dedicated approach post SNF discharge is reshaping a future with fewer readmissions.</p>
-    </div>
-  <div class="banner-img">
-      <img src="./assets/home/banner.png" alt="banner-img">
-  </div>
-</section>
-<section class="after-banner">
-    <img src="./assets/home/after-banner1.png" alt="bg-image">
-<p>At Puzzle Healthcare, we stand at the intersection of innovation and compassion, relentlessly working towards reimagining post-acute care.</p>
- <img class="img-2" src="./assets/home/after-banner2.png" alt="bg-image">
-</section>
-<!-- hospital section -->
+    <!-- main section -->
+    <!-- banner -->
+    <section class="banner-section">
+      <div class="banner-text">
+        <h1>Transforming Post-Acute Care through Value-Based Innovation</h1>
+        <p>
+          Every moment, every transition matters. Our 90-day dedicated approach
+          post SNF discharge is reshaping a future with fewer readmissions.
+        </p>
+      </div>
+      <div class="banner-img">
+        <img src="./assets/home/banner.png" alt="banner-img" />
+      </div>
+    </section>
+    <section class="after-banner">
+      <img src="./assets/home/after-banner1.png" alt="bg-image" />
+      <p>
+        At Puzzle Healthcare, we stand at the intersection of innovation and
+        compassion, relentlessly working towards reimagining post-acute care.
+      </p>
+      <img class="img-2" src="./assets/home/after-banner2.png" alt="bg-image" />
+    </section>
+    <!-- hospital section -->
 
-<section class="container">
-    <div class="container-img">
-<img src="./assets/home/for-hospital.png" alt="image">
-    </div>
-    <div class="container-text">
-<h1>For Hospitals</h1>
-<p>Readmission Prevention, Seamless Transitions, and Enhanced Post-Discharge Visibility</p>
-    </div>
-</section>
-<!-- For SNF -->
-<section class="container">
-     <div class="container-text">
-<h1>For SNFs</h1>
-<p>Enhanced Patient Care and Facility Support</p>
-    </div>
-    <div class="container-img">
-<img src="./assets/home/snf.png" alt="image">
-    </div>
-   
-</section>
-<!-- payors -->
-<section class="container">
-    <div class="container-img">
-<img src="./assets/home/for-payors.png" alt="image">
-    </div>
-    <div class="container-text">
-<h1>For Payors </h1>
-<p>Readmission Prevention, Seamless Transitions, and Enhanced Post-Discharge Visibility</p>
-    </div>
-</section>
+    <section class="container">
+      <div class="container-img">
+        <img src="./assets/home/for-hospital.png" alt="image" />
+      </div>
+      <div class="container-text">
+        <h1>For Hospitals</h1>
+        <p>
+          Readmission Prevention, Seamless Transitions, and Enhanced
+          Post-Discharge Visibility
+        </p>
+      </div>
+    </section>
+    <!-- For SNF -->
+    <section class="container">
+      <div class="container-text">
+        <h1>For SNFs</h1>
+        <p>Enhanced Patient Care and Facility Support</p>
+      </div>
+      <div class="container-img">
+        <img src="./assets/home/snf.png" alt="image" />
+      </div>
+    </section>
+    <!-- payors -->
+    <section class="container">
+      <div class="container-img">
+        <img src="./assets/home/for-payors.png" alt="image" />
+      </div>
+      <div class="container-text">
+        <h1>For Payors </h1>
+        <p>
+          Readmission Prevention, Seamless Transitions, and Enhanced
+          Post-Discharge Visibility
+        </p>
+      </div>
+    </section>
 
-<!--physiatry  -->
-<section class="container">
-     <div class="container-text">
-<h1>On-Site Physiatry</h1>
-<p>Elevating SNF Care and Reducing Readmissions</p>
-    </div>
-    <div class="container-img">
-<img src="./assets/home/physiatry.png" alt="image">
-    </div>
-   
-</section>
-<!-- for patient -->
-<section class="before-footer">
-
-    <div class="for-patient">
-        <img  src="./assets/home/comma.png" alt="logo-svg">
+    <!--physiatry  -->
+    <section class="container">
+      <div class="container-text">
+        <h1>On-Site Physiatry</h1>
+        <p>Elevating SNF Care and Reducing Readmissions</p>
+      </div>
+      <div class="container-img">
+        <img src="./assets/home/physiatry.png" alt="image" />
+      </div>
+    </section>
+    <!-- for patient -->
+    <section class="before-footer">
+      <div class="for-patient">
+        <img src="./assets/home/comma.png" alt="logo-svg" />
         <p>Patient</p>
-    </div>
-    <img class="bg-img1" src="./assets/home/patient-line1.png" alt="bg-image">
-<p class="before-footer-text">After being discharged from the nursing home, having my care manager with me every step of the way gave me so much comfort. I knew exactly what I needed to do. It felt like I had a personal assistant to help with any issues getting what I needed.</p>
- <img class="bg-img2" src="./assets/home/patient-line2.png" alt="bg-image">
- <!-- <p class="dot">...</p> -->
-</section>
+      </div>
+      <img
+        class="bg-img1"
+        src="./assets/home/patient-line1.png"
+        alt="bg-image"
+      />
+      <p class="before-footer-text">
+        After being discharged from the nursing home, having my care manager
+        with me every step of the way gave me so much comfort. I knew exactly
+        what I needed to do. It felt like I had a personal assistant to help
+        with any issues getting what I needed.
+      </p>
+      <img
+        class="bg-img2"
+        src="./assets/home/patient-line2.png"
+        alt="bg-image"
+      />
+      <!-- <p class="dot">...</p> -->
+    </section>
     <!-- footer -->
 
     <footer>
-<div class="footer-content">
- <img src="./assets/navbar/logo.svg" alt="logo-svg">
+      <div class="footer-content">
+        <img src="./assets/navbar/logo.svg" alt="logo-svg" />
 
- <p class="footer-paragraph">Let’s get started on something great. Write us on:</p>
- <p class="email"><img src="./assets/footer/text.svg" alt="email-logo"> info@puzzlehealthcare.com</p>
-</div>
-       <div class="last-footer">
+        <p class="footer-paragraph">
+          Let’s get started on something great. Write us on:
+        </p>
+        <p class="email">
+          <img src="./assets/footer/text.svg" alt="email-logo" />
+          info@puzzlehealthcare.com
+        </p>
+      </div>
+      <div class="last-footer">
         <p class="copy-right-text">© 2023 Puzzle. All rights reserved.</p>
 
         <div class="terms-text">
-            <a href="">Terms</a>
-            <a href="">Policy</a>
-            <a href="">Cookies</a>
+          <a href="">Terms</a>
+          <a href="">Policy</a>
+          <a href="">Cookies</a>
         </div>
-       </div>
+      </div>
     </footer>
+
+    <!-- js -->
+    <script src="./JS/navbar.js"></script>
   </body>
 </html>
