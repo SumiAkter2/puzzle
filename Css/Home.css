@@ -1,13 +1,13 @@
 
-
 *{
-        box-sizing: border-box;
+     box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
     body{
         font-family: 'Poppins', sans-serif;
     }
+
     /* banner section */
 
 .banner-section{
@@ -185,26 +185,24 @@ margin:50px auto;
     /* banner */
     .banner-section{
         display: grid;
-        width: 400px;
+       text-align: start;
         margin: 0 auto;
-      
     }
     .banner-img{
-        width: 100%;
+        width: 370px;
         margin: 100px auto;
+        display: flex;
+        justify-content: center;
     }
     .banner-img img{
-        margin-top: 90px;
+        margin: 0px auto;
         width: 350px;
         height: 318px;
         flex-shrink: 0;
     }
-    .banner-section{
-        /* padding: 100px 0px; */
-    }
+   
     .banner-text h1{
-            width: 380px;
-            text-align: center;
+           width: 350px;
             font-size: 30px;
             font-style: normal;
             font-weight: 700;
@@ -213,8 +211,7 @@ margin:50px auto;
             letter-spacing: -0.6px;
     }
     .banner-text p{
-       
-            text-align: center;
+            width: 350px;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
@@ -223,7 +220,7 @@ margin:50px auto;
     }
     /* after banner */
         .after-banner {
-            width: 100%;
+          width: 100%;
            margin: 0;
            border-radius: 0;
         }

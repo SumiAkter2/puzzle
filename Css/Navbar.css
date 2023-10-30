@@ -41,9 +41,9 @@ cursor: pointer;
 }
 
 .nav>.nav-links>a {
-    display: inline-block;
-    color: #071B55;
-    font-family: Poppins;
+        display: inline-block;
+        color: #071B55;
+        font-family: Poppins;
         font-size: 15px;
         font-style: normal;
         font-weight: 500;
@@ -52,17 +52,13 @@ cursor: pointer;
         padding: 6px 20px;
 }
 
-.nav>.nav-links>a:hover {
+.nav>.nav-links>a:hover,.active,nav>.nav-links>a:active {
     color: #071B55;
     opacity: 100%;
+    border-bottom: 2px solid #071B55;
 }
 
-.active{
-color: red;
-opacity: 100%;
-border-bottom: 2px solid #071B55;
 
-}
 .nav>#nav-check {
     display: none;
 }
