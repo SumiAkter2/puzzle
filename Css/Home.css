@@ -17,17 +17,18 @@
     border-radius: 30px;
     background: #FFF;
     padding-top: 90px;
-    gap: 40px;
+    gap: 20px;
    
 }
 .banner-text{
-    padding-left: 50px;
+    padding-left: 20px;
     padding-top: 90px;
 }
 .banner-text h1{
-  
+    width: 548px;
+    /* padding: 20px; */
     color: #071B55;
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -35,9 +36,9 @@
     letter-spacing: -0.8px;
 }
 .banner-text p{
-   
+    width: 504px;
     color: #071B55;
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -47,7 +48,7 @@
 }
 
 .banner-img img{
-    width: 705px;
+    width: 704px;
     margin: 0 auto;
     padding: 0px;
     height: 500px;
@@ -113,13 +114,17 @@ padding: 0 120px;
         /* padding-bottom: 8px; */
 }
 .same-container p{
-    color: #071B55;
+    width: 506px;
+        color: #071B55;
         font-family: Poppins;
         font-size: 22px;
         font-style: normal;
         font-weight: 500;
         line-height: 150%;
         /* 33px */
+}
+.odd-container p{
+    width: 462px;
 }
 .even-container{
     display: none;
@@ -144,14 +149,16 @@ padding: 0 120px;
   .for-patient{
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: #FFF;
+    align-items: start;
     gap: 10px;
-    padding-top: 30px ;
+    color: #FFF;
+    padding-top: 20px;
+    
+  
   }
   .for-patient p{
     opacity: 0.5;
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -167,7 +174,7 @@ padding: 0 120px;
         font-weight: 500;
         line-height: normal;
         letter-spacing: -0.5px;
-        margin: 60px auto;
+        margin: 80px auto;
 }
   .before-footer .bg-img1{
     position: absolute;
@@ -181,11 +188,7 @@ padding: 0 120px;
     bottom: 0px;
     z-index: 10;
   }
-  .dot{
-    position: absolute;
-    bottom: 5px;
-    text-align: center;
-  }
+  
 
 
 
@@ -311,12 +314,9 @@ bottom: 5px;
   .before-footer{
     width: 100%;
     height: 100%;
-    border-radius: 0;
   }
   .before-footer .bg-img1,.bg-img2{
         width: 100%;
-        /* height: 339px; */
-        transform: rotate(-90deg);
         flex-shrink: 0;
   }
   .before-footer-text{
