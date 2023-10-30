@@ -1,23 +1,36 @@
-// var header = document.getElementById("nav-link");
-// var btns = header.getElementsByClassName("link-btn");
-// for (var i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function () {
-//     var current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
-//   });
-// }
-
+// active class:
+console.log("please allah help me");
 const links = document.querySelectorAll("#nav-link   a");
-
-function handleClick(event) {
-  event.preventDefault();
+const contentSections = document.querySelectorAll(".active-svg");
+function showContent(link) {
   links.forEach((link) => link.classList.remove("active"));
-  event.target.classList.add("active");
+
+  contentSections.forEach((section) => section.classList.remove("active"));
+
+  link.classList.add("active");
+
+  const targetId = link.getAttribute("href").substring(1);
+
+  document.getElementById(targetId).classList.add("active");
 }
 
-links.forEach((link) => link.addEventListener("click", handleClick));
-links[0].classList.add("active");
+// Add click event listeners to each link
+links.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    showContent(link);
+  });
+});
+showContent(links[0]);
+// function handleClick(event) {
+//   event.preventDefault();
+//   links.forEach((link) => link.classList.remove("active"));
+//   event.target.classList.add("active");
+// }
+
+// links.forEach((link) => link.addEventListener("click", handleClick));
+// links[0].classList.add("active");
+// activeClass.style.display = "block";
 
 // slider:
 console.log("all ok");
