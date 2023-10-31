@@ -1,10 +1,13 @@
 // location set
-document.getElementById("about-page").addEventListener("click", function () {
-  window.location.href = "/about.html";
-});
-document.getElementById("home-page").addEventListener("click", function () {
-  window.location.href = "/index.html";
-});
+// document.getElementById("about-page").addEventListener("click", function () {
+//   window.location.href = "/about.html";
+// });
+// document.getElementById("home-page").addEventListener("click", function () {
+//   window.location.href = "/index.html";
+// });
+// document.getElementById("services-page").addEventListener("click", function () {
+//   window.location.href = "/index.html";
+// });
 // active class:
 
 console.log("please allah help me");
@@ -17,14 +20,14 @@ function showContent(link) {
 
   link.classList.add("active");
 
-  // const targetId = link.getAttribute("href").substring(1);
-  const targetId = link
-    .getAttribute("href")
-    .split("/")
-    .pop()
-    .replace(".html", "");
+  const targetId = link.getAttribute("href").substring(1);
+  // const targetId = link
+  //   .getAttribute("href")
+  //   .split("/")
+  //   .pop()
+  //   .replace(".html", "");
   const targetElement = document.getElementById(targetId);
-
+  console.log(targetElement);
   if (targetElement) {
     targetElement.classList.add("active");
   } else {
