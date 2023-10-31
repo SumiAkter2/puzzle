@@ -47,7 +47,7 @@ links.forEach((link) => {
   });
 });
 
-showContent(links[0]);
+showContent(links[2]);
 
 // slider:
 document.addEventListener("DOMContentLoaded", function () {
