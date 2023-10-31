@@ -55,7 +55,9 @@ function loadContent(route) {
   const contentDiv = document.getElementById("content");
   contentDiv.innerHTML = "";
   const newContent = document.getElementById("hospital");
+  const newContent2 = document.getElementById("snf");
   newContent.style.display = "none";
+  newContent2.style.display = "none";
 
   switch (route) {
     case "#/hospital":
@@ -63,8 +65,7 @@ function loadContent(route) {
       break;
     case "#/snf":
       newContent.style.display = "none";
-      contentDiv.innerHTML =
-        "<h1>Page 2</h1><p>This is the content of Page snf.</p>";
+      newContent2.style.display = "flex";
       break;
     case "#/payor":
       contentDiv.innerHTML =
@@ -75,8 +76,8 @@ function loadContent(route) {
         "<h1>Page 2</h1><p>This is the content of Page physiatry.</p>";
       break;
     default:
-    // contentDiv.innerHTML = "<h1>404 - Page Not Found</h1>";
-       newContent.style.display = "flex";
+      // contentDiv.innerHTML = "<h1>404 - Page Not Found</h1>";
+      newContent.style.display = "flex";
   }
 }
 
