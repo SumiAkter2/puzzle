@@ -110,6 +110,12 @@
                 padding-left: 20px;
                 letter-spacing: -0.48px;
         }
+   .about-content {
+    width: 360px;
+    margin: 0px auto;
+    flex-shrink: 0;
+    position: relative;
+   }
    .about-content img{
     width: 370px;
     height: 244px;
@@ -145,7 +151,7 @@
 
    /* same container */
    .about-same-container  {
-       margin-top: 150px;
+       margin-top: 50px;
        display: flex;
        flex-direction: column-reverse;
        padding-left: 10px;
@@ -191,6 +197,6 @@
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
-        /* 24px */
+        padding-left: 20px;
    }
 }
