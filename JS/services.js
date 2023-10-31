@@ -49,6 +49,52 @@ links.forEach((link) => {
 
 showContent(links[2]);
 
+// spa for services:
+
+function loadContent(route) {
+  const contentDiv = document.getElementById("content");
+  contentDiv.innerHTML = "";
+  const newContent = document.getElementById("hospital-container");
+
+  switch (route) {
+    case "#/hospital":
+      newContent.style.display = "block";
+      break;
+    case "#/snf":
+      contentDiv.innerHTML =
+        "<h1>Page 2</h1><p>This is the content of Page snf.</p>";
+      break;
+    case "#/payor":
+      contentDiv.innerHTML =
+        "<h1>Page 2</h1><p>This is the content of Page payor.</p>";
+      break;
+    case "#/physiatry":
+      contentDiv.innerHTML =
+        "<h1>Page 2</h1><p>This is the content of Page physiatry.</p>";
+      break;
+    default:
+      contentDiv.innerHTML = "<h1>404 - Page Not Found</h1>";
+  }
+}
+
+function handleHashChange() {
+  const route = location.hash;
+  loadContent(route);
+
+  // Remove the 'active' class from all links
+  const links = document.querySelectorAll(".navbar a");
+  links.forEach((link) => link.classList.remove("active"));
+
+  // Add the 'active' class to the clicked link
+  const currentLink = document.querySelector(`.navbar a[href='${route}']`);
+  if (currentLink) {
+    currentLink.classList.add("active");
+  }
+}
+
+window.addEventListener("hashchange", handleHashChange);
+window.addEventListener("load", handleHashChange);
+
 // slider:
 document.addEventListener("DOMContentLoaded", function () {
   const slider = document.querySelector(".slider");

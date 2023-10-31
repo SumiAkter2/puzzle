@@ -48,8 +48,58 @@
 
 }
 
+/* spa */
+ .navbar ul {
+    width: 100%;
+     margin: 200px auto 0px auto;
+     list-style: none;
+     padding: 20px 50px 20px 50px;
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     
+ }
 
+ .nav-border{
+    width: 1270px;
+    opacity: 0.2;
+    background: #000;
+    height: 1px;
+    margin: 0 auto;
+ }
+  .navbar li{
+    text-decoration: none;
+  }
+ .navbar a {
+        text-decoration: none;
+        color: #071a5588;
+        font-family: Poppins;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.26px;
+        transition: 0.3s;
+        
+ }
 
+ .navbar a.active ,.navbar ul li a:hover{
+    color: #071B55;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    
+ }
+#content{
+    width: 100%;
+    margin: 0 auto;
+}
+#hospital-content{
+    display: none;
+}
 @media screen and (max-width:570px) {
     .services-container h1 {
         width: 340px;
@@ -104,6 +154,8 @@
 
     }
 
-
+    .navbar ul,.nav-border{
+        display: none;
+    }
     
 }
