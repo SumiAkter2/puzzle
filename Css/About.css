@@ -49,19 +49,20 @@
 
 /* same container */
 .about-same-container{
-    margin-top: 350px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
 }
-.about-same-container img{
+.about-same-container img ,.vision-content img{
         width: 600px;
         height: 550px;
         flex-shrink: 0;
 }
-.about-same-container h1{
+.about-same-container h1,
+.vision-content h1{
     width: 511px;
     color: #071B55;
         font-family: Poppins;
@@ -72,7 +73,8 @@
         letter-spacing: -0.3px;
         margin-bottom: 20px;
 }
-.about-same-container p{
+.about-same-container p,
+.vision-content p{
     width: 511px;
     color: #071B55;
     font-family: Poppins;
@@ -83,7 +85,14 @@
     /* 30px */
 }
 
-
+.vision-content {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+}
 
 
 
@@ -135,24 +144,35 @@
 
 
    /* same container */
-   .about-same-container {
+   .about-same-container  {
        margin-top: 150px;
        display: flex;
        flex-direction: column-reverse;
        padding-left: 10px;
        padding-right: 10px;
    }
-.about-same-container img {
+ .vision-content{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+   
+.about-same-container img,
+.vision-content img {
     width: 360px;
     height: 281px;
     flex-shrink: 0;
     padding: 5px;
     margin: 50px auto;
 }
-.about-same-container div{
+.about-same-container div,
+.vision-content div{
     width: 360px;
 }
-   .about-same-container h1 {
+   .about-same-container h1,
+.vision-content h1 {
         width: 320px;
         font-size: 24px;
         font-style: normal;
@@ -163,7 +183,7 @@
         padding-left: 20px;
    }
 
-   .about-same-container p {
+   .about-same-container p ,.vision-content p{
         width: 350px;
         color: #071B55;
         font-family: Poppins;
