@@ -54,13 +54,15 @@ showContent(links[2]);
 function loadContent(route) {
   const contentDiv = document.getElementById("content");
   contentDiv.innerHTML = "";
-  const newContent = document.getElementById("hospital-container");
+  const newContent = document.getElementById("hospital");
+  newContent.style.display = "none";
 
   switch (route) {
     case "#/hospital":
-      newContent.style.display = "block";
+      newContent.style.display = "flex";
       break;
     case "#/snf":
+      newContent.style.display = "none";
       contentDiv.innerHTML =
         "<h1>Page 2</h1><p>This is the content of Page snf.</p>";
       break;
@@ -73,7 +75,8 @@ function loadContent(route) {
         "<h1>Page 2</h1><p>This is the content of Page physiatry.</p>";
       break;
     default:
-      contentDiv.innerHTML = "<h1>404 - Page Not Found</h1>";
+    // contentDiv.innerHTML = "<h1>404 - Page Not Found</h1>";
+       newContent.style.display = "flex";
   }
 }
 
