@@ -1,7 +1,7 @@
 // location set
-document.getElementById("about-page").addEventListener("click", function () {
-  window.location.href = "/about.html";
-});
+// document.getElementById("about-page").addEventListener("click", function () {
+//   window.location.href = "/about.html";
+// });
 // document.getElementById("home-page").addEventListener("click", function () {
 //   window.location.href = "/index.html";
 // });
