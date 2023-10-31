@@ -1,39 +1,95 @@
- .slider-container {
-     width: 300px;
-     /* Adjust the width to your desired size */
-     margin: 0 auto;
-     overflow: hidden;
- }
+.about-container h1{
+    width: 790px;
+    color: #071B55;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    margin-top: 90px ;
+    margin-bottom: 60px;
+    padding-left: 80px;
+    letter-spacing: -0.52px;
+}
+.about-content {
+        width: 1265px;
+        margin: 0px auto;
+        height: 498px;
+        flex-shrink: 0;
+        position: relative;
+}
 
- .slider {
-     display: flex;
-     transition: transform 1s;
- }
+.text-content{
+    width: 969px;
+    height: 284px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    padding: 54px 48px;
+    position: absolute;
+    bottom: -170px;
+    left: 140px;
+    z-index: 20;
 
- .slide {
-     width: 300px;
-     /* Adjust the width to match the container width */
-     padding: 20px;
-     background-color: #3498db;
-     color: white;
-     text-align: center;
- }
+    
+}
+.text-content p{
+    width: 861px;
+    margin: 0 auto;
+    color: #071B55;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    
+       
+}
 
- .pagination {
-     text-align: center;
-     margin-top: 10px;
- }
+@media screen and (max-width:570px){
+    .about-container h1 {
+            width: 340px;
+            color: #071B55;
+            font-family: Poppins;
+            font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 35px;
+                margin-top: 72px;
+                margin-bottom: 46px;
+                padding-left: 38px;
+                letter-spacing: -0.48px;
+        }
+   .about-content img{
+    width: 370px;
+    height: 244px;
+    flex-shrink: 0;
+    margin: 0px auto;
+    position: relative;
+   }
 
- .dot {
-     width: 10px;
-     height: 10px;
-     background-color: #888;
-     border-radius: 50%;
-     display: inline-block;
-     margin: 0 5px;
-     cursor: pointer;
- }
+   .text-content {
+     
+       width: 320px;
+       height: 318px;
+       flex-shrink: 0;
+       padding: 54px 8px;
+       position: absolute;
+       bottom: -40px;
+       left: 30px;
+       z-index: 90;
+   }
 
- .dot.active {
-     background-color: #333;
- }
+   .text-content p {
+       width: 300px;
+       margin: 0 auto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 22.4px */
+
+
+   }
+}

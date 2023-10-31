@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./Css/Navbar.css" />
     <link rel="stylesheet" href="./Css/Footer.css" />
     <link rel="stylesheet" href="./Css/About.css" />
+    <link rel="stylesheet" href="./Css/Home.css" />
 
     <!-- bootstrap -->
     <link
@@ -26,19 +27,267 @@
     />
   </head>
   <body>
-    <h1>about page</h1>
-    <div class="slider-container">
-      <div class="slider">
-        <div class="slide">Slide 1: This is the first slide.</div>
-        <div class="slide">Slide 2: Here comes the second slide.</div>
-        <div class="slide">Slide 3: And now, the third slide.</div>
+    <header>
+      <div class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <div class="nav-title">
+            <img src="./assets/navbar/logo.svg" alt="logo" />
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="#071B55"
+            >
+              <path
+                d="M3 12H21M3 6H21M9 18H21"
+                stroke="#122280"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </label>
+        </div>
+
+        <div class="nav-links" id="nav-link">
+          <li>
+            <a href="index.html" class="link-btn"
+              >Home
+
+              <svg
+                class="active-svg"
+                id="index"
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+              >
+                <circle cx="5" cy="5" r="5" fill="#23B1D9" />
+              </svg>
+            </a>
+          </li>
+
+          <li id="about-page">
+            <a href="./about.html" class="link-btn">
+              About Us
+              <svg
+                style="margin-left: 10px"
+                class="active-svg"
+                id="about"
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+              >
+                <circle cx="5" cy="5" r="5" fill="#23B1D9" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="services.html" class="link-btn"
+              >Services
+
+              <svg
+                class="active-svg"
+                id="services"
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+              >
+                <circle cx="5" cy="5" r="5" fill="#23B1D9" />
+              </svg>
+            </a>
+          </li>
+        </div>
+        <div class="nav-contact-btn">
+          <div class="contact-btn">
+            <span class="contact-text"> Contact Us</span>
+            <span class="IconContainer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6 18L18 6M18 6H10M18 6V14"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="pagination">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
+    </header>
+
+    <!-- about Banner section -->
+
+    <section class="about-container">
+      <h1>
+        At Puzzle Healthcare, we stand at the intersection of innovation and
+        compassion, relentlessly working towards reimagining post-acute care.
+      </h1>
+
+      <div class="about-content">
+        <img src="./assets/about/about-banner.png" alt="banner-img" />
+        <div class="text-content">
+          <p>
+            Our foundational principles are firmly rooted in delivering
+            value-based care that’s not only accessible but also exceptional in
+            its delivery. With a unique amalgamation of technology, expert care
+            management, and unyielding commitment to patient-centric service,
+            we’re not just healthcare providers; we’re architects of superior
+            post-acute care experiences, where every interaction is crafted with
+            precision and empathy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--before footer for patient -->
+    <section class="before-footer">
+      <div class="for-patient">
+        <img src="./assets/home/comma.png" alt="logo-svg" />
+        <p>Patient</p>
+      </div>
+
+      <div class="before-footer-text">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <p>
+                After being discharged from the nursing home, having my care
+                manager with me every step of the way gave me so much comfort. I
+                knew exactly what I needed to do. It felt like I had a personal
+                assistant to help with any issues getting what I needed.
+              </p>
+            </div>
+            <div class="slide">
+              <p>
+                Being discharged from the nursing home, having my care manager
+                with me every step of the way gave me so much comfort. I knew
+                exactly what I needed to do. It felt like I had a personal
+                assistant to help with any issues getting what I needed.
+              </p>
+            </div>
+            <div class="slide">
+              <p>
+                Before being discharged from the nursing home, having my care
+                manager with me every step of the way gave me so much comfort. I
+                knew exactly what I needed to do. It felt like I had a personal
+                assistant to help with any issues getting what I needed.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- phone -->
+    <section
+      class="before-footer-phone"
+      style="
+        background-image: url('./assets/footer/bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <div class="before-footer-text">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <p>
+                After being discharged from the nursing home, having my care
+                manager with me every step of the way gave me so much comfort. I
+                knew exactly what I needed to do. It felt like I had a personal
+                assistant to help with any issues getting what I needed.
+              </p>
+            </div>
+            <div class="slide">
+              <p>
+                Being discharged from the nursing home, having my care manager
+                with me every step of the way gave me so much comfort. I knew
+                exactly what I needed to do. It felt like I had a personal
+                assistant to help with any issues getting what I needed.
+              </p>
+            </div>
+            <div class="slide">
+              <p>
+                Before being discharged from the nursing home, having my care
+                manager with me every step of the way gave me so much comfort. I
+                knew exactly what I needed to do. It felt like I had a personal
+                assistant to help with any issues getting what I needed.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+
+    <footer>
+      <div class="footer-content">
+        <img src="./assets/navbar/logo.svg" alt="logo-svg" />
+
+        <p class="footer-paragraph">
+          Let’s get started on something great. Write us on:
+        </p>
+        <p class="email">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="23"
+            height="18"
+            viewBox="0 0 23 18"
+            fill="none"
+          >
+            <path
+              d="M1.5 4L6.69384 7.46256C6.99349 7.66232 7.14331 7.7622 7.3054 7.83296C7.44927 7.89577 7.60003 7.94142 7.75458 7.96896C7.92869 8 8.10876 8 8.46888 8H14.5311C14.8912 8 15.0713 8 15.2454 7.96896C15.4 7.94142 15.5507 7.89577 15.6946 7.83296C15.8567 7.76221 16.0065 7.66232 16.3062 7.46256L21.5 4M6.3 17H16.7C18.3802 17 19.2202 17 19.862 16.673C20.4265 16.3854 20.8854 15.9265 21.173 15.362C21.5 14.7202 21.5 13.8802 21.5 12.2V5.8C21.5 4.11984 21.5 3.27976 21.173 2.63803C20.8854 2.07354 20.4265 1.6146 19.862 1.32698C19.2202 1 18.3802 1 16.7 1H6.3C4.61984 1 3.77976 1 3.13803 1.32698C2.57354 1.6146 2.1146 2.07354 1.82698 2.63803C1.5 3.27976 1.5 4.11984 1.5 5.8V12.2C1.5 13.8802 1.5 14.7202 1.82698 15.362C2.1146 15.9265 2.57354 16.3854 3.13803 16.673C3.77976 17 4.61984 17 6.3 17Z"
+              stroke="#071B55"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          info@puzzlehealthcare.com
+        </p>
+
+        <div class="footer-line"></div>
+      </div>
+      <div class="last-footer">
+        <p class="copy-right-text">© 2023 Puzzle. All rights reserved.</p>
+
+        <div class="terms-text">
+          <a href="">Terms</a>
+          <a href="">Policy</a>
+          <a href="">Cookies</a>
+        </div>
+      </div>
+    </footer>
     <!-- boot -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -47,5 +296,6 @@
     ></script>
 
     <script src="./JS/About.js"></script>
+    <script src="./JS/navbar.js"></script>
   </body>
 </html>

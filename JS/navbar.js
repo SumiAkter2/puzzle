@@ -1,4 +1,12 @@
+// location set
+document.getElementById("about-page").addEventListener("click", function () {
+  window.location.href = "/about.html";
+});
+document.getElementById("home-page").addEventListener("click", function () {
+  window.location.href = "/index.html";
+});
 // active class:
+
 console.log("please allah help me");
 const links = document.querySelectorAll("#nav-link li  a");
 const contentSections = document.querySelectorAll(".active-svg");
@@ -9,9 +17,19 @@ function showContent(link) {
 
   link.classList.add("active");
 
-  const targetId = link.getAttribute("href").substring(1);
+  // const targetId = link.getAttribute("href").substring(1);
+  const targetId = link
+    .getAttribute("href")
+    .split("/")
+    .pop()
+    .replace(".html", "");
+  const targetElement = document.getElementById(targetId);
 
-  document.getElementById(targetId).classList.add("active");
+  if (targetElement) {
+    targetElement.classList.add("active");
+  } else {
+    console.error(`Element with ID ${targetId} not found.`);
+  }
 }
 
 // Add click event listeners to each link
@@ -30,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slide");
   const dots = document.querySelectorAll(".dot");
   let currentIndex = 0;
-  const slideInterval = 5000; // Change slide every 5 seconds
+  // const slideInterval = 1000; // Change slide every 5 seconds
 
   function showSlide(slideIndex) {
     slides.forEach((slide, index) => {
@@ -78,58 +96,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 console.log("all ok");
-// class Slider {
-//   constructor(element) {
-//     this.el = document.querySelector(element);
-//     this.init();
-//   }
-
-//   init() {
-//     this.links = this.el.querySelectorAll("#slider-nav a");
-//     this.wrapper = this.el.querySelector("#slider-wrapper");
-//     this.navigate();
-//   }
-
-//   navigate() {
-//     for (let i = 0; i < this.links.length; ++i) {
-//       let link = this.links[i];
-//       this.slide(link);
-//     }
-//   }
-
-//   slide(element) {
-//     element.addEventListener(
-//       "click",
-//       (e) => {
-//         e.preventDefault();
-//         const a = element;
-//         this.setCurrentLink(a);
-//         const index = parseInt(a.getAttribute("data-slide"), 10) + 1;
-//         const currentSlide = this.el.querySelector(
-//           `.slide:nth-child(${index})`
-//         );
-
-//         this.wrapper.style.left = `-${currentSlide.offsetLeft}px`;
-//       },
-//       false
-//     );
-//   }
-
-//   setCurrentLink(link) {
-//     const parent = link.parentNode;
-//     const a = parent.querySelectorAll("a");
-
-//     link.className = "current";
-
-//     for (let j = 0; j < a.length; ++j) {
-//       const cur = a[j];
-//       if (cur !== link) {
-//         cur.className = "";
-//       }
-//     }
-//   }
-// }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const aSlider = new Slider("#slider");
-// });

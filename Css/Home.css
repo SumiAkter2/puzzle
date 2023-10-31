@@ -203,6 +203,7 @@ margin: 80px 0px;
  }
 
  .slide {
+    background: transparent;
      width: 930px;
      padding: 20px;
      color: white;
