@@ -294,6 +294,7 @@ margin: 80px 0px;
         background: #23B1D9;
         width: 100%;
         position: relative;
+        border-radius: 15px;
         margin:  80px 0;
         height: 380px;
     }
